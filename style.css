@@ -17,10 +17,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 119px;
 }
 .page-img {
-  width: 33.7015rem;
-  height: 27.96413rem;
+  width: 80%;
   margin-right: 118px;
 }
 .page-title {
@@ -57,17 +57,47 @@
   color: white;
   border: none;
 }
-.Footer-text{
-    display: flex;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.Footer-text {
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.Footer-text span{
-    font-weight: bold;
+.Footer-text span {
+  font-weight: bold;
 }
-.Footer-text a{
-    text-decoration: none;
-    color:gray;
+.Footer-text a {
+  text-decoration: none;
+  color: gray;
 }
 
 /* !max-Width:375px */
+
+@media screen and (max-width: 375px) {
+  .page-name {
+    padding: 20px 24px;
+  }
+  .page-img {
+    width: 17.92688rem;
+    /* height: 14.875rem; */
+    margin: 0;
+  }
+  .container {
+    flex-direction: column;
+    height:100vh;
+  }
+  .page-title {
+    font-size: 3rem;
+    width: 21.875rem;
+    text-align: center;
+  }
+  .page-description{
+    text-align: center;
+    margin-bottom:50px;
+  }
+  .btn{
+    margin-left:90px;
+    border-radius:10px;
+    margin-bottom:114px;
+  }
+}
